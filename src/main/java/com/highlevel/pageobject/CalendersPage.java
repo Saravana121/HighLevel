@@ -11,8 +11,8 @@ import com.highlevel.base.BaseTest;
  * @author Saravana
  * This page class contains login and calendar page web elements and its implemented methods
  */
-public class calendersPage extends BaseTest {
-	public calendersPage() {
+public class CalendersPage extends BaseTest {
+	public CalendersPage() {
 		PageFactory.initElements(driver, this);
 	}
 
