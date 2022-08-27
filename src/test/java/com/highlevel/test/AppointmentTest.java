@@ -1,4 +1,4 @@
-package com.higlevel.test;
+package com.highlevel.test;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -6,9 +6,9 @@ import java.text.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.highlevel.base.BaseTest;
 import com.highlevel.pageobject.AppointmentPage;
 import com.highlevel.pageobject.calendersPage;
-import com.higlevel.base.BaseTest;
 
 /**
  * This test class verifying the appointment scheduled time is in business time zone or not.

@@ -1,4 +1,4 @@
-package com.higlevel.base;
+package com.highlevel.base;
 
 import java.io.FileInputStream;
 import java.io.IOException;
