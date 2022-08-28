@@ -1,2 +1,2 @@
 # HighLevel
-#This project used to verify the appointment scheduled time. 
+#This project contains Selenium TestNG test cases to verify the appointment scheduled time and date. 

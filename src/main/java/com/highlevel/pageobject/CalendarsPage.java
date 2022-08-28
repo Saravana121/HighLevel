@@ -11,13 +11,13 @@ import com.highlevel.base.BaseTest;
  * @author Saravana
  * This page class contains login and calendar page web elements and its implemented methods
  */
-public class CalendersPage extends BaseTest {
-	public CalendersPage() {
+public class CalendarsPage extends BaseTest {
+	public CalendarsPage() {
 		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(id = "sb_calendars")
-	private WebElement calendersFromLeftPanel;
+	private WebElement calendarsFromLeftPanel;
 
 	@FindBy(id = "tb_apppontment-tab")
 	private WebElement apppontmentTab;
@@ -60,8 +60,8 @@ public class CalendersPage extends BaseTest {
 	 * @return requested date and time in business time zone 
 	 */
 	public String getAppointmentDateTimeInBusinessTimeZone() {
-		waitForElement(calendersFromLeftPanel);
-		click(calendersFromLeftPanel);
+		waitForElement(calendarsFromLeftPanel);
+		click(calendarsFromLeftPanel);
 		waitForElement(apppontmentTab);
 		click(apppontmentTab);
 		waitForElement(requestedTime);

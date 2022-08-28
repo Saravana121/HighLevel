@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.highlevel.base.BaseTest;
 import com.highlevel.pageobject.AppointmentPage;
-import com.highlevel.pageobject.CalendersPage;
+import com.highlevel.pageobject.CalendarsPage;
 
 /**
  * This test class verifying the appointment scheduled time is in business time zone or not.
@@ -30,7 +30,7 @@ public class AppointmentTest extends BaseTest {
 	@Test
 	public void verifyAppointmentTime() throws ParseException {
 		AppointmentPage app = new AppointmentPage();
-		CalendersPage cal = new CalendersPage();
+		CalendarsPage cal = new CalendarsPage();
 		String convertedDateAndTime = app.convertToBusinessTimeZone(firstName, lastName, phone, mail);
 		cal.loginToHighLevel(url, userName, password);
 		String dateInBusinessSite = cal.getAppointmentDateTimeInBusinessTimeZone();
